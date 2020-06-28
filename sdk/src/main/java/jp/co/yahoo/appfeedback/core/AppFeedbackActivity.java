@@ -77,6 +77,7 @@ public class AppFeedbackActivity extends FragmentActivity {
     private void checkPermissionMediaProjectionNow() {
         // Android 5.0 ~
         // MediaProjectionAPI
+        // Custom memo
         if (Build.VERSION.SDK_INT >= 21) {
             if (AppFeedback.canUseMediaProjectionAPI() && AppFeedback.getMediaProjectionData() == null) {
                 MediaProjectionManager mediaProjectionManager = (MediaProjectionManager) getSystemService(Context.MEDIA_PROJECTION_SERVICE);
